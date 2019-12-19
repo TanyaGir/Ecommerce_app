@@ -39,7 +39,7 @@ This project has 5 packages, as follows:
 
 - __resources/data.sql__ - Its a sql file that populates our database with couple of items. Spring will run this file every time the application starts
 
-### Example:
+### For Example:
 To create a new app user we send a POST request to:
 http://localhost:8080/api/user/create with an example body like 
 
