@@ -26,7 +26,7 @@ This project has 5 packages, as follows:
     - __OrderController__: Submits a user's cart. Also, contains the api for fetching user order history.
     - __UserController__: Creates a new user and fetches the user by name/id
     
-- __security__ - This package contains classes that implement proper authentication and authorization controls so users can only access their data, and that data can only be accessed in a secure way. We have used username and password for authentication and JWT (Json Web Tokens) for authorization. The included files are:
+- __security__ - This package contains classes that implement proper authentication and authorization controls so users can only access their data, and that data can only be accessed in a secure way. We have used username and password for authentication and JWT (Json Web Tokens) for authorization. The included files are-
     - __JWTAuthenticationFilter__: It is a subclass of `UsernamePasswordAuthenticationFilter` for taking the username and password from a login request and logging in. This, upon successful authentication, should hand back a valid JWT in the `Authorization` header 
     - __JWTAuthorizationFilter__: It is a subclass of `BasicAuthenticationFilter`. It implements private getAuthentication method which reads the JWT from the Authorization header, and then uses JWT to validate the token. If everything is in place, we set the user in the SecurityContext and allow the request to move on.
     - __SecurityConstants__: It consists of some constants that we use in the security package.
